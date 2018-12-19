@@ -47,6 +47,7 @@ def hit?(card_total)
     else hit_stay == "s"
       card_total
     end
+  end
 
   end_game(card_total)
 end
