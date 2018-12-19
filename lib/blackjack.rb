@@ -30,13 +30,15 @@ end
 def initial_round
   # code #initial_round here
   return card_total = deal_card + deal_card
-  puts "display_card_total(card_total)"
+  puts display_card_total(card_total)
 end
 
-def hit?(prompt_user, get_user_input)
+def hit?(card_total)
   # code hit? here
+  prompt_user
+  get_user_input
   if get_user_input == "h"
-   deal_card
+   card_total = card_total + deal_card
   elsif
     get_user_input == "s"
     prompt_user
@@ -44,6 +46,7 @@ def hit?(prompt_user, get_user_input)
     get_user_input != "h" || "s"
     invalid_command
   end
+  return card_total
 end
 
 def invalid_command
