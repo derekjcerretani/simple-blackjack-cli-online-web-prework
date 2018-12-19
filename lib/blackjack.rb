@@ -43,6 +43,7 @@ def hit?(card_total)
       card_total += deal_card
     else hit_stay == "s"
       card_total
+      break
     end
 end
 
