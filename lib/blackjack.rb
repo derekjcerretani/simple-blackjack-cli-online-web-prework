@@ -49,6 +49,7 @@ def hit?(card_total)
 
   until hit_stay > 21
     prompt_user
+  end
 
 end
 
@@ -65,6 +66,7 @@ end
 def runner
   # code runner here
   welcome
-  initial_round 
+  initial_round
   hit?(card_total)
+  end_game(card_total)
 end
