@@ -43,10 +43,12 @@ def hit?(card_total)
 
   if hit_stay == "h"
     card_total += deal_card
-  elsif hit_stay == "s"
+  else hit_stay == "s"
     card_total
-  else 
   end
+
+  until hit_stay > 21
+    prompt_user
 
 end
 
@@ -62,4 +64,7 @@ end
 
 def runner
   # code runner here
+  welcome
+  initial_round 
+  hit?(card_total)
 end
