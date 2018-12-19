@@ -43,6 +43,12 @@ def hit?(card_total)
 
   if hit_stay == "h"
     new_card_total = card_total + deal_card
+  elsif
+    hit_stay == "s"
+    end_game
+  else
+    hit_stay !== "h" || "s"
+    invalid_command
   end
 
 end
