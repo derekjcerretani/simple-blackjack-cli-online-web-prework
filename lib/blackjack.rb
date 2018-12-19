@@ -45,7 +45,7 @@ def hit?(card_total)
     card_total += deal_card
   elsif hit_stay == "s"
     card_total
-
+  else 
   end
 
 end
