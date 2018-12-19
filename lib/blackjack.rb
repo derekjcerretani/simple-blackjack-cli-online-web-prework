@@ -47,7 +47,7 @@ def hit?(card_total)
     hit_stay == "s"
     end_game
   else
-    hit_stay !== "h" || "s"
+    hit_stay != "h" || "s"
     invalid_command
   end
 
