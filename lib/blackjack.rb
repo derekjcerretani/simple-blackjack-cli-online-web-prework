@@ -24,6 +24,7 @@ end
 
 def end_game(card_total)
   # code #end_game here
+  if card_total > 21
   puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
 
@@ -37,11 +38,11 @@ def hit?(card_total)
   # code hit? here
   prompt_user
   get_user_input
-  if get_user_input == "h"
-   card_total = card_total + deal_card
+  if get_user_input == "s"
+    end_game
   elsif
-    get_user_input == "s"
-    prompt_user
+    get_user_input == "h"
+    
   else
     get_user_input != "h" || "s"
     invalid_command
