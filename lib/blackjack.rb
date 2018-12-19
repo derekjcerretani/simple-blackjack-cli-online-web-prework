@@ -39,11 +39,11 @@ def hit?(card_total)
   prompt_user
   get_user_input
   if get_user_input == "s"
-    end_game
+    puts "Thanks for playing!"
   elsif
     get_user_input == "h"
-    card_total = card_total + deal_card
-    display_card_total(card_total)
+    new_card_total = card_total + deal_card
+    display_card_total(new_card_total)
   else
     get_user_input != "h" || "s"
     invalid_command
