@@ -36,7 +36,7 @@ end
 
 def hit?(prompt_user, get_user_input)
   # code hit? here
-  if get_user_input == "h" 
+  if get_user_input == "h"
    deal_card
   elsif
     get_user_input == "s"
@@ -60,4 +60,3 @@ end
 def runner
   # code runner here
 end
-    
