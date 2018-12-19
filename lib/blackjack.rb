@@ -46,11 +46,6 @@ def hit?(card_total)
   else hit_stay == "s"
     card_total
   end
-
-  until hit_stay > 21
-    prompt_user
-  end
-
 end
 
 def invalid_command
