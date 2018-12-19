@@ -44,8 +44,10 @@ def hit?(card_total)
   while card_total < 21
     if hit_stay == "h"
       card_total += deal_card
+      break
     else hit_stay == "s"
       card_total
+      break
     end
   end
 
